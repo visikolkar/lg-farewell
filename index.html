@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Life was Good but...</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Trocchi&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" type="text/css" media="screen" href="app.css" />
+  </head>
+  <body>
+    <div class="loading" id="js-loader">
+      <div class="loader"></div>
+    </div>
+
+    <canvas id="c"></canvas>
+    <div class="message">
+      <h1>Until we meet the next time</h1>
+      <p class="subheader">See you soon my beloved friend</p>
+      <p>
+        As my time at LG winds down, I can't help but reflect on all the awesome
+        people I've worked with. Hard to believe, it's six years now. I feel
+        grateful that I met all of you, and I cannot thank you
+        enough for your awesome support. It's been a blast collaborating
+        with you on so many projects. Of course, this isn't goodbye; I know
+        we'll keep in touch outside of work. I'll miss you moving forward, but I
+        wish you nothing but the best. Keep killin' it!
+      </p>
+      <h2>Life's Good <i class="fa fa-thumbs-o-up" aria-hidden="true"></i></h2>
+      <p>
+        I created this 3D model to say my words virtually! A click will make him
+        do many cool stuff; just like we did
+        <i class="fa fa-beer" aria-hidden="true"></i>
+      </p>
+      <h2>Vishwanath Kolkar</h2>
+      <div class="social">
+        <a
+          href="https://twitter.com/vishwa_kolkar"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fa fa-twitter-square" aria-hidden="true"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/vishwakolkar/"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fa fa-linkedin-square" aria-hidden="true"></i
+        ></a>
+        <a
+          href="https://www.instagram.com/vishwa_kolkar/"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fa fa-instagram" aria-hidden="true"></i
+        ></a>
+      </div>
+    </div>
+
+    <!-- The main Three.js file -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/108/three.min.js"></script>
+    <!-- This brings in the ability to load custom 3D objects in the .gltf file format. Blender allows the ability to export to this format out the box -->
+    <script src="https://cdn.jsdelivr.net/gh/mrdoob/Three.js@r92/examples/js/loaders/GLTFLoader.js"></script>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
