@@ -126,3 +126,17 @@ a {
 a:hover {
   color: #ffcc66;
 }
+
+@media only screen and (max-width: 600px) {
+    #c {
+      clear: both;
+      width: 100%;
+      display: block;
+    }
+
+    .message{ 
+        clear: both;
+        width: 100%;
+        margin: 0 auto;
+    }
+  }
