@@ -4,15 +4,10 @@
 
 html,
 body {
-  /* background-color: #000000; */
   height: 100%;
   padding: 0;
   margin: 0;
   background-color: #f1f1f1;
-  /* font-family: Montserrat, sans-serif;
-  color: rgba(255, 255, 255, 0.3);
-  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3),
-    0px -1px 0px rgba(0, 0, 0, 0.7); */
 }
 
 .loading {
@@ -66,7 +61,6 @@ body {
   float: left;
   width: 40%;
   height: 100%;
-  /* border: 1px solid black; */
 }
 
 .message {
@@ -75,15 +69,21 @@ body {
   height: auto;
   padding: 4px;
   margin: 100px auto;
-  /* border: 1px solid red; */
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 10px 30px 10px 10px;
 }
 
+.layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 h1 {
-  color: #7c795d;
+  /* color: #7c795d; */
+  color: black;
   font-family: "Trocchi", serif;
   font-size: 45px;
   font-weight: normal;
@@ -92,7 +92,8 @@ h1 {
 }
 
 h2 {
-  color: #7c795d;
+  /* color: #7c795d; */
+  color: black;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 28px;
   font-weight: 400;
@@ -102,14 +103,17 @@ h2 {
 
 .subheader {
   font-size: 26px;
-  font-weight: 300;
-  color: #ffcc66;
-  margin: 0 0 24px;
+  font-weight: 900;
+  color: #a36a15;
+  /* color: #333; */
+  margin: 24px 0 24px;
 }
 
 p {
-  color: #4c4a37;
+  /* color: #4c4a37; */
+  color: #333;
   font-family: "Source Sans Pro", sans-serif;
+  font-weight: 900;
   font-size: 18px;
   line-height: 32px;
   margin: 0 0 24px;
@@ -118,7 +122,6 @@ p {
 
 a {
   color: #ff9900;
-  /* background: #fff4a3; */
   text-decoration: none;
   font-size: 32px;
 }
@@ -128,15 +131,86 @@ a:hover {
 }
 
 @media only screen and (max-width: 600px) {
-    #c {
-      clear: both;
-      width: 100%;
-      display: block;
-    }
-
-    .message{ 
-        clear: both;
-        width: 100%;
-        margin: 0 auto;
-    }
+  #c {
+    clear: both;
+    width: 100%;
+    display: block;
   }
+
+  .message {
+    clear: both;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .contact-info {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    text-align: left !important;
+    width: 100% !important;
+  }
+
+  .contact-item {
+    justify-content: flex-start !important;
+    width: 100% !important;
+  }
+}
+
+.tooltip-link {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.tooltip-link::after {
+  content: "Download Resume";
+  position: absolute;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 5px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+  font-size: 0.8rem;
+  z-index: 999;
+}
+
+.tooltip-link:hover::after {
+  opacity: 1;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 24px;
+  gap: 12px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.contact-item {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-item i {
+  font-size: 22px;
+  color: #a36a15;
+}
+
+.contact-item:hover {
+  color: #a36a15;
+}
